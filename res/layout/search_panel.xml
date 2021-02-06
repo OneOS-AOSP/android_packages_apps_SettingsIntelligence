@@ -25,14 +25,14 @@
         android:id="@+id/search_bar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/search_panel_background"
-        android:elevation="4dp">
+        android:elevation="0dp">
         <androidx.cardview.widget.CardView
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/search_bar_margin"
-            app:cardCornerRadius="@dimen/search_bar_corner_radius"
+            app:cardCornerRadius="?android:attr/dialogCornerRadius"
+            app:cardBackgroundColor="?android:attr/colorBackground"
             app:cardElevation="2dp">
             <Toolbar
                 android:id="@+id/search_toolbar"
